@@ -1,11 +1,9 @@
 name: laojiangzhongzheng
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '19 3/6 * * *'
-
-jobs:  # 25537
+    - cron: '58 3/6 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -13,13 +11,16 @@ jobs:  # 25537
       - uses: actions/checkout@v4
       - name: laojiangzhongzheng
         env:
-          ptcp563: ${{ secrets.ptcp563 }}
+          oz7: ${{ secrets.oz7 }}
         run: |
-          echo $ptcp563 | jq -r .r64 | /bin/bash
-          echo $ha03 | jq -r .zmsn33786 | /bin/bash
-          echo $drds372 | jq -r .igefz334 | /bin/bash
-          echo $x459 | jq -r .ja895 | /bin/bash
-          echo $jj15 | jq -r .ixphq3126 | /bin/bash
-          echo $ycu8048 | jq -r .o052 | /bin/bash
-          echo $gzg37 | jq -r .fqn23156 | /bin/bash
+          echo $oz7 | jq -r .kltut2904 | /bin/bash
+          echo $fh324 | jq -r .g41 | /bin/bash
+          echo $cot510 | jq -r .rq46863 | /bin/bash
+          echo $tgab92 | jq -r .bi4 | /bin/bash
+          echo $do8 | jq -r .a29574 | /bin/bash
+          echo $k5 | jq -r .eixt2 | /bin/bash
+          echo $o45935 | jq -r .mfx7684 | /bin/bash
+          echo $yxjc57063 | jq -r .bwlm3 | /bin/bash
+          echo $zs4376 | jq -r .pg30509 | /bin/bash
+          echo $x93 | jq -r .u125 | /bin/bash
 
